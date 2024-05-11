@@ -1,9 +1,9 @@
 package practice;
 
-class Printer<T>
+class Printer<T> //class of generics type
 {
 	T x;
-	Printer(T x)
+	Printer(T x) //generics type parameter to accept any type of values.
 	{
 		this.x = x;
 	}
@@ -19,7 +19,8 @@ public class Generics
 {
 	public static void main(String args[])
 	{
-		Printer<Integer> p = new Printer<>(23);
+		//Passing any type of arguements.
+		Printer<Integer> p = new Printer<>(23); 
 		p.print();
 		
 		Printer<Double> p1 = new Printer<>(44.89);
